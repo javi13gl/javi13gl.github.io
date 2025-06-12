@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Simulación JGL</title>
+  <style>
+    :root {
+      --olive: #556b2f;
+      --cream: #f5f1e9;
+      --text: #333;
+      --radius: 8px;
+      --gap: 1.5rem;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--cream);
+      color: var(--text);
+      line-height: 1.6;
+      padding: var(--gap);
+    }
+
+    /* NUEVO HEADER */
+    header {
+      background-color: var(--olive);
+      color: var(--cream);
+      text-align: center;
+      padding: var(--gap) 0;
+      border-radius: var(--radius);
+      margin-bottom: var(--gap);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.25rem;
+    }
+    header p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    .intro {
+      max-width: 800px;
+      margin: 0 auto var(--gap);
+      font-size: 1.1rem;
+    }
+
+    main .themes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--gap);
+    }
+
+    .theme-block {
+      background-color: white;
+      border-radius: var(--radius);
+      padding: var(--gap);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .theme-block h2 {
+      margin-bottom: 1rem;
+      color: var(--olive);
+      font-size: 1.5rem;
+      border-bottom: 2px solid var(--olive);
+      padding-bottom: 0.5rem;
+    }
+
+    .simulation-item {
+      margin-bottom: var(--gap);
+    }
+    .simulation-item h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.3rem;
+      color: var(--olive);
+    }
+    .simulation-item p {
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+    .simulation-item video {
+      width: 100%;
+      border-radius: var(--radius);
+      display: block;
+    }
+
+    /* NUEVO FOOTER */
+    footer {
+      background-color: var(--olive);
+      color: var(--cream);
+      text-align: center;
+      padding: var(--gap) 0;
+      border-radius: var(--radius);
+      margin-top: var(--gap);
+    }
+    footer p {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Portfolio Simulación</h1>
+    <p> Simulación — 3º GIM | Javier García Laguna</p>
+  </header>
+
+  <div class="intro">
+    <p>A continuación muestro un portfolio de las diferentes simulaciones que hemos ido haciendo en el entorno de <strong>Processing</strong> a lo largo del curso, ya sea en las clases de teoría o en los propios laboratorios de la asignatura. Estas se encuentran divididas en los siguientes temas:</p>
+  </div>
+
+  <main>
+    <div class="themes">
+
+      <!-- Bloque Tema 1 -->
+      <section id="tema1" class="theme-block">
+        <h2>Tema 1: Integradores</h2>
+
+        <!-- Simulación 1 -->
+        <article class="simulation-item">
+          <h3>Shooter</h3>
+          <p>Shooter simple de bolas.</p>
+          <video src="videos/tema1_sim1.mp4" controls muted loop>
+            Tu navegador no soporta la etiqueta <code>video</code>.
+          </video>
+        </article>
+
+        <article class="simulation-item">
+          <h3>Bola - Punto</h3>
+          <p>Giro simple de una bola alrededor de un punto.</p>
+          <video src="videos/tema1_sim1.mp4" controls muted loop>
+            Tu navegador no soporta la etiqueta <code>video</code>.
+          </video>
+        </article>
+
+        <article class="simulation-item">
+          <h3>Montaña rusa</h3>
+          <p>Montaña rusa simple</p>
+          <video src="videos/tema1_sim1.mp4" controls muted loop>
+            Tu navegador no soporta la etiqueta <code>video</code>.
+          </video>
+        </article>
+
+        <article class="simulation-item">
+          <h3>Sim. Integradores</h3>
+          <p>Muelle sometido a los diferentes integradores para comparar diferencias.</p>
+          <video src="videos/tema1_sim1.mp4" controls muted loop>
+            Tu navegador no soporta la etiqueta <code>video</code>.
+          </video>
+        </article>
+      </section>
+
+      <!-- Bloque Tema 2 -->
+      <section id="tema2" class="theme-block">
+        <h2>Tema 2: Sist. de partículas</h2>
+        <article class="simulation-item">
+          <h3>Col. Velocidad</h3>
+          <p>Partículas que dependiendo de la zona de la pantalla en la que esten son sometidas a efectos.</p>
+          <video src="videos/tema1_sim1.mp4" controls muted loop>
+            Tu navegador no soporta la etiqueta <code>video</code>.
+          </video>
+        </article>
+        <article class="simulation-item">
+          <h3>Fuente</h3>
+          <p>Fuente en 2D que emite partículas que simulan agua con dispersión aleatoria.</p>
+          <video src="videos/tema1_sim1.mp4" controls muted loop>
+            Tu navegador no soporta la etiqueta <code>video</code>.
+          </video>
+        </article>
+        <article class="simulation-item">
+          <h3>Billar fr.</h3>
+          <p>Billar francés con colisiones entre las bolas.</p>
+          <video src="videos/tema1_sim1.mp4" controls muted loop>
+            Tu navegador no soporta la etiqueta <code>video</code>.
+          </video>
+        </article>
+        <article class="simulation-item">
+          <h3>Hash & Grid</h3>
+          <p>Entorno con muchas particulas donde aplicamos los métodos de Hash y Grid para ver las diferencias.</p>
+          <video src="videos/tema1_sim1.mp4" controls muted loop>
+            Tu navegador no soporta la etiqueta <code>video</code>.
+          </video>
+        </article>
+      </section>
+
+      <!-- Bloque Tema 3 -->
+      <section id="tema3" class="theme-block">
+        <h2>Tema 3: Obj. deformables</h2>
+        <article class="simulation-item">
+          <h3>Pelo 1D</h3>
+          <p>Malla de pelo simple en 1D</p>
+          <video src="videos/tema1_sim1.mp4" controls muted loop>
+            Tu navegador no soporta la etiqueta <code>video</code>.
+          </video>
+        </article>
+        <article class="simulation-item">
+          <h3>Banderas</h3>
+          <p>Banderas con diferentes estructuras a las cuales se les aplican varias fuerzas.</p>
+          <video src="videos/tema1_sim1.mp4" controls muted loop>
+            Tu navegador no soporta la etiqueta <code>video</code>.
+          </video>
+        </article>
+        <article class="simulation-item">
+          <h3>Col. Partícula-Malla</h3>
+          <p>Malla que cae sobre una partícula y se simula su colisión.</p>
+          <video src="videos/tema1_sim1.mp4" controls muted loop>
+            Tu navegador no soporta la etiqueta <code>video</code>.
+          </video>
+        </article>
+        <article class="simulation-item">
+          <h3>Cubo Def.</h3>
+          <p>Cubo formado por muelles y como este se deforma al aplicarle fuerzas.</p>
+          <video src="videos/tema1_sim1.mp4" controls muted loop>
+            Tu navegador no soporta la etiqueta <code>video</code>.
+          </video>
+        </article>
+        <article class="simulation-item">
+          <h3>Ondas</h3>
+          <p>Ondas simuladas en una superficie que imita al agua, las cuales se pueden sumar entre ellas.</p>
+          <video src="videos/tema1_sim1.mp4" controls muted loop>
+            Tu navegador no soporta la etiqueta <code>video</code>.
+          </video>
+        </article>
+        <article class="simulation-item">
+          <h3>Carrera de canicas</h3>
+          <p>Carrera simple entre canicas.</p>
+          <video src="videos/tema1_sim1.mp4" controls muted loop>
+            Tu navegador no soporta la etiqueta <code>video</code>.
+          </video>
+        </article>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Javier García Laguna — UV | Universidad de Valencia | Grado en Ingeniería Multimedia
+  </footer>
+
+</body>
+</html>
