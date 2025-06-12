@@ -25,7 +25,6 @@
       padding: var(--gap);
     }
 
-    /* NUEVO HEADER */
     header {
       background-color: var(--olive);
       color: var(--cream);
@@ -88,7 +87,6 @@
       display: block;
     }
 
-    /* NUEVO FOOTER */
     footer {
       background-color: var(--olive);
       color: var(--cream);
@@ -101,6 +99,11 @@
       font-size: 0.9rem;
       opacity: 0.9;
     }
+    .simulation-gif {
+  width: 100%;
+  border-radius: var(--radius);
+  display: block;
+  }
   </style>
 </head>
 <body>
@@ -117,25 +120,17 @@
   <main>
     <div class="themes">
 
-      <!-- Bloque Tema 1 -->
       <section id="tema1" class="theme-block">
         <h2>Tema 1: Integradores</h2>
-
-        <!-- Simulación 1 -->
-        <article class="simulation-item">
-          <h3>Shooter</h3>
-          <p>Shooter simple de bolas.</p>
-          <video src="videos/tema1_sim1.mp4" controls muted loop>
-            Tu navegador no soporta la etiqueta <code>video</code>.
-          </video>
-        </article>
 
         <article class="simulation-item">
           <h3>Bola - Punto</h3>
           <p>Giro simple de una bola alrededor de un punto.</p>
-          <video src="videos/tema1_sim1.mp4" controls muted loop>
-            Tu navegador no soporta la etiqueta <code>video</code>.
-          </video>
+          <img
+            src="gifs/bolapunto.gif"
+            alt="Gif de la simulacion bolapunto"
+            class="simulation-gif"
+          />
         </article>
 
         <article class="simulation-item">
@@ -155,7 +150,6 @@
         </article>
       </section>
 
-      <!-- Bloque Tema 2 -->
       <section id="tema2" class="theme-block">
         <h2>Tema 2: Sist. de partículas</h2>
         <article class="simulation-item">
@@ -188,7 +182,6 @@
         </article>
       </section>
 
-      <!-- Bloque Tema 3 -->
       <section id="tema3" class="theme-block">
         <h2>Tema 3: Obj. deformables</h2>
         <article class="simulation-item">
